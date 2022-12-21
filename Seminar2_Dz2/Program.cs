@@ -1,7 +1,6 @@
 ﻿int number = ReadInt("Введите число: ");
 int count = number.ToString().Length;
 Console.Write(MakeArray(number, count));
-// Функция принимает сообщение для отображения в консоли, и выводит результат введенных данных пользователем.
 int ReadInt(string message)
 {
     Console.Write(message);
@@ -14,7 +13,7 @@ int MakeArray(int a, int b)
 int result = 0;
     if (b < 3)
     {
-        Console.Write("Третьей цифры нет, держи: "+result);
+        Console.Write("Третьей цифры нет, держи: ");
     }
     else
     {
