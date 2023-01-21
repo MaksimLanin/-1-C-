@@ -16,14 +16,14 @@ for(int i=0; i < size;i++){
 }
 return array;
 }
-int[] massive=GetRandomArray(123,0,150);
-
+int[] massive=GetRandomArray(123,10,999);
+Console.WriteLine(string.Join(", ",massive));
 
 int count = 0;
 
 for (int i = 0; i < massive.Length; i++)
 {
-if (i>=10 && i<=99)
+if (massive[i]>=10&&massive[i]<=99)
 count++;
 }
 Console.WriteLine($"В массиве из {massive.Length} чисел, в диапазоне от 10 до 99 включительно находится {count} чисел");
