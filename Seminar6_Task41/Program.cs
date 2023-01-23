@@ -8,31 +8,12 @@
 */
 string vvod ="";
 int count=0;
-
-while( (vvod=Console.ReadLine()) !="stop")
+Console.WriteLine("Bводите числа");
+while( (vvod=Console.ReadLine()!) !="stop")
 {
-   int chislo=Convert.ToInt32(vvod);
-    if(chislo>0){
+   int converter =Convert.ToInt32(vvod);
+    if(converter>0){
         count++;
     }
 }
-Console.WriteLine($"Вы ввели {count} положительых чисел");
-
-
-
-
-
-
-
-// Console.Write("Введите размер массива:  ");
-// int size = Convert.ToInt32(Console.ReadLine());
-// int a = 0;
-//     int[] array = new int[size];
-//     for(int i = 0;i< size;i++){
-//         Console.Write("Вводите: ");
-//         a=Convert.ToInt32(Console.ReadLine());
-//         array[i]=a;
-        
-//     }
-//     Console.WriteLine(string.Join(", ",array));
-    
+Console.WriteLine($"Количество положительных чисел: {count} ");
