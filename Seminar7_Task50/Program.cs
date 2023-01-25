@@ -13,14 +13,23 @@ int rows = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите номер столбца: ");
 int colums = Convert.ToInt32(Console.ReadLine());
 
-if (rows > matrix.GetLength(0) || colums > matrix.GetLength(1))
+if(rows > 0 && colums > 0 )
 {
-    Console.WriteLine("Введите другое значение, такого элемента нет");
+    if (rows > matrix.GetLength(0) || colums > matrix.GetLength(1))
+    {
+        Console.WriteLine("Введите другое значение, такого элемента нет");
+    }
+    else
+    {
+        Console.WriteLine($" {matrix[rows-1,colums-1]}");
+    }
 }
 else
 {
-    Console.WriteLine($" {matrix[rows-1,colums-1]}");
+    Console.WriteLine("Введите другое значение, такого элемента нет");
 }
+
+
 
 void getRandomMatrix(int[,] matrix)
 {
