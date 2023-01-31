@@ -1,14 +1,14 @@
 ﻿int length = 4;
-int[,] table = new int[length, length];
-fillArray(table, length);
-PrintArray(table);
+int[,] matrix = new int[length, length];
+fillArray(matrix, length);
+PrintArray(matrix);
 
 
 void fillArray(int[,] matrix, int n)
 {
     int i = 0, j = 0;
     int value = 1;
-    for (int e = 0; e < n * n; e++)
+    for (int c = 0; c < n * n; c++)
     {
         int k = 0;
         do { matrix[i, j++] = value++; } while (++k < n - 1);
