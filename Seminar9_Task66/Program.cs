@@ -6,22 +6,16 @@ int M = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число N: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
-SumFromMToN(M, N);
-
-void SumFromMToN(int M, int N)
-{
-    Console.Write($"Результат: {SummInterval(M - 1, N)}");
-}
+Console.Write($"Результат: {SummInterval(M - 1, N)}");
 
 int SummInterval(int M, int N)
 {
     int res = M;
-    if(M==N){
-        return(0);
-    }
+    if(M==N) return 0;
+    
     else{
         M++;
-        res = M + SummInterval(M,N);
+        res = M + SummInterval(M ,N);
         return res;
     }
 
