@@ -4,11 +4,9 @@ int count = 1;
 FromLessToMore(number,count);
 
 void FromLessToMore(int n, int count)
-{
-    if (count > n)
-    {
-        return;
-    }
+{   
+    if (count > n) return;
+   
     else
     {
         FromLessToMore(n, count + 1);
